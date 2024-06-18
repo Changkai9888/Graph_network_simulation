@@ -1,3 +1,5 @@
+#如果python的版本不对，会导致random库无法对接数据。
+#Python版本==3.9.6, networkx==2.6.3, matplotlib==3.5.2, EoN==1.1
 import networkx as nx
 import matplotlib.pyplot as plt
 import EoN
