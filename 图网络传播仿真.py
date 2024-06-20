@@ -44,8 +44,10 @@ M = 4
 ER = nx.gnm_random_graph(N, M*N)
 ####BA异质图创建
 BA=nx.barabasi_albert_graph(N, M)
-#nx.draw(ER, with_labels=True)
-#SIR(ER,comment='ER')
-SIR(BA,comment='')
+####二维方格图创建
+Grid=nx.grid_2d_graph(100,100, periodic=False)
+SIR(BA,comment='BA')
+SIR(Grid,comment='Grid')
+#nx.draw(Grid,alpha=0.6, with_labels=False)
 plt.show()
 
